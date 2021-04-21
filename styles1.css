@@ -1,0 +1,91 @@
+
+    .carousel .carousel-item {
+      position: relative;
+      height: 400px; }
+      .carousel .carousel-item img {
+        display: block;
+        margin: 0 auto;
+        height: 100%;
+        width: auto;
+      }
+    .carousel-item::after {
+      content: '';
+      z-index: -1;
+      filter: blur(10px);
+      opacity: 0.6;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .carousel-item-1::after {
+      background-image: url('img/logo1.jpeg');
+    }
+    .carousel-item-2::after {
+      background-image: url('img/logo2.jpeg');
+    }
+    .carousel-item-3::after {
+      background-image: url('img/logo3.jpeg');
+    }
+  
+#carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1; }
+
+.jumbotron {
+        margin: 0px auto;
+        padding: 20px 10px;
+        background: #ff7f50;
+        color: floralwhite; 
+    }
+    .row-header {
+      margin: 0px auto;
+      padding: 0px 0px; }
+    
+    .row-content {
+      margin: 0px auto;
+      padding: 20px 0px;
+      /*border-bottom: 1px ridge ;*/
+      min-height: 400px; }
+
+.footer{
+  padding: 100px 20px;
+  background-color: #ffdab9;
+}
+.boxes{
+  box-shadow: 2px 2px 5px 0 #808080;
+  border-radius: 5px;
+  height: 250px;
+  width:190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.boxes img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+@media (max-width:640px){
+  .boxes{
+    box-shadow: 2px 2px 5px 0 #808080;
+    border-radius: 5px;
+    height: 200px;
+    width:140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+}
